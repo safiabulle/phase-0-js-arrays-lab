@@ -33,10 +33,10 @@ npm test
 ## Features
 This project demonstrates basic array manipulation in JavaScript through the following functions:
 
-** logFirstProduct() – Logs the first product in the products array.
-** addProduct(productName) – Adds a new product to the end of the array.
-** updateProductName(index, newName) – Updates the name of a product at a specific index.
-** removeLastProduct() – Removes the last product from the array.
+- logFirstProduct() – Logs the first product in the products array.
+-  addProduct(productName) – Adds a new product to the end of the array.
+- updateProductName(index, newName) – Updates the name of a product at a specific index.
+- removeLastProduct() – Removes the last product from the array.
 
 All functions are exported using module.exports and tested with Jest to ensure correctness.
 
@@ -44,7 +44,7 @@ All functions are exported using module.exports and tested with Jest to ensure c
 
 It focuses on:
 
-**Writing reusable functions for array manipulation
+** Writing reusable functions for array manipulation
 ** Exporting functions for testing with Node.js
 ** Writing unit tests using Jest
 
