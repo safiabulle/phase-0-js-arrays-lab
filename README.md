@@ -1,58 +1,76 @@
-# Lab: Product Inventory Management System
+## JavaScript Products Lab
 
-## Overview
+**Author: Safia Jamal Bulle
 
-In this lab, you will create a simple system to manage a store's product inventory. You will use JavaScript arrays to store, update, and remove product information. This practice will help you get comfortable with basic array operations.
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Pages Overview](#pages-overview)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-### Scenario
+## installation
+Follow these steps to run the project locally:
 
-As a new junior developer at an online store, you are asked to help manage the product inventory. You will build a basic system using arrays to handle tasks like adding products, updating product names, and removing products.
+Clone the repository:
+git clone git@github.com:safiabulle/phase-0-js-arrays-lab.git
+Navigate into the project folder:
+cd phase-0-js-functions-lab
+Install dependencies:
+npm install jest --save-dev
 
-### Objective
+## Usage
+To run the project:
 
-By the end of this lab, you should be able to:
+node inventoryManagement.js
 
-- Declare and initialize an array to store product data.
-- Access and print specific product details using their index.
-- Modify existing product information.
-- Remove a product from the array.
+To run tests with Jest:
 
-## Tools and Resources
+npm test
 
-- **Node.js:** To run your JavaScript files from the command line.
-- **VSCode:** To write and execute your JavaScript code.
-- **GitHub:** You will fork and clone the provided repository to get started. https://github.com/learn-co-curriculum/phase-0-js-arrays-lab.git
+## Features
+This project demonstrates basic array manipulation in JavaScript through the following functions:
 
-## Instructions
+** logFirstProduct() – Logs the first product in the products array.
+** addProduct(productName) – Adds a new product to the end of the array.
+** updateProductName(index, newName) – Updates the name of a product at a specific index.
+** removeLastProduct() – Removes the last product from the array.
 
-### Fork and Clone the Repository
+All functions are exported using module.exports and tested with Jest to ensure correctness.
 
-1. Go to the provided GitHub repository link.
-2. Click on the "Fork" button to create your own copy of the repository.
-3. Clone your forked repository to your local machine.
-4. Install the necessary dependencies:
-   ```sh
-   npm install
-   ```
+## Pages Overview
 
-### Create the Product Inventory Array
+It focuses on:
 
-1. Open the `inventoryManagement.js` file in VS Code.
+**Writing reusable functions for array manipulation
+** Exporting functions for testing with Node.js
+** Writing unit tests using Jest
 
-2. **Create the Product Inventory Array**
-   - Open the `inventoryManagement.js` file in VS Code.
-   - Create an array called `products` to store product names. Use the following four strings:
-     - "Laptop"
-     - "Phone"
-     - "Headphones"
-     - "Monitor"
+Main files:
 
-3. **Access Product Information**
-   - Write a function called `logFirstProduct` to console log the details of the first product in the array.
+inventoryManagement.js→ Contains all product-related functions
+inventoryManagement.test.js → Contains Jest test cases for each function
 
-4. **Update Product Information**
-   - Write a function called `updateProductName` to change the name of a product. This function should take the product's position in the array and the new name as arguments.
+## Technologies Used
 
-5. **Remove a Product**
-   - Write a function called `removeLastProduct` to remove the last product from the array.
+JavaScript (Node.js) – Core language for logic implementation
+Jest – Testing framework for unit tests
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+Fork the repository
+Create a new branch:
+git checkout -b feature-name
+Make your changes
+Push your branch:
+git push origin feature-name
+Open a pull request
+
+## License
+
+This project currently does not have a license.
 
